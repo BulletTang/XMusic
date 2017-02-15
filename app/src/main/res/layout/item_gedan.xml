@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <FrameLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/fra">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playlist_art"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1e000000"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:id="@+id/playlist_listen_count" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/playlist_listen_count"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/index_icn_earphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_below="@id/fra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlist_name"
+        android:textSize="12sp"
+        android:textColor="@color/primary_text"
+        android:lines="2"
+        android:ellipsize="end" />
+</RelativeLayout>

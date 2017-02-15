@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_listinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/activity_playlist"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <me.xdj.view.SimpleMultiStateView
+        android:id="@+id/playlist_container"
+        app:msv_failView="@layout/error_view"
+        android:gravity="center"
+        app:msv_loadingView="@layout/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_playlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </me.xdj.view.SimpleMultiStateView>
+</RelativeLayout>

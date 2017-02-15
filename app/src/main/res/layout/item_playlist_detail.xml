@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@android:color/background_light"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_postion"
+            android:gravity="center"
+            tools:text="1"
+        android:layout_marginLeft="16dp"
+            android:textColor="@color/secondary_text_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    <TextView
+        tools:text="title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tv_songtitle"
+        android:layout_toRightOf="@id/tv_postion"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    <TextView
+        tools:text="author"
+        android:id="@+id/tv_artist"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/tv_postion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_below="@id/tv_songtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp" />
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider"
+        />
+        </RelativeLayout>
+
+</RelativeLayout>

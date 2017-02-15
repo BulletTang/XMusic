@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_material_light_1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_song_art"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/placeholder_music"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_playbar_title"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="bottom"
+        android:layout_toRightOf="@id/iv_song_art"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_playbar_author"
+        android:layout_width="150dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:gravity="top"
+        android:layout_below="@id/tv_playbar_title"
+        android:layout_toRightOf="@id/iv_song_art"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+        tools:text="Author" />
+
+    <ImageView
+        android:id="@+id/iv_playbar_next"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/btn_play_next"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:tint="@color/primary" />
+
+    <ImageView
+        android:id="@+id/iv_playbar_play"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:layout_toLeftOf="@id/iv_playbar_next"
+        android:layout_centerVertical="true"
+        android:tint="@color/primary"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/btn_play" />
+
+
+    <ImageView
+        android:id="@+id/iv_playbar_prev"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@id/iv_playbar_play"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_play_prev"
+        android:tint="@color/primary" />
+
+    <ProgressBar
+        android:id="@+id/pb_song"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/playcontrol_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

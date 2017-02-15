@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zixuan.xmusic.ui.activity.SongPlayingActivity">
+
+        <include layout="@layout/content_song_playing"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            app:navigationIcon="@drawable/actionbar_back"
+            app:title="XMusic"
+            android:layout_width="match_parent"
+            android:background="@color/primary"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:id="@+id/toolbar_playmode"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_random"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.CoordinatorLayout>

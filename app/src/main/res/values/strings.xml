@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">XMusic</string>
+
+    <string name="progress_zero">00:00</string>
+    <string name="error_tips">哎呀 发生了错误</string>
+    <string name="reload_tips">重新加载</string>
+    <string name="loading_tips">努力加载中...</string>
+    <string name="loading_now">正在加载...</string>
+    <string name="nomore_tips">没有更多内容了</string>
+    <string name="song_connecting_tips">正在缓冲</string>
+    <string name="toolbar_title_gedan">歌单</string>
+    <string name="toolbar_title_album">专辑</string>
+    <string name="toolbar_title_radio">电台</string>
+    <string name="toolbar_title_billboard">排行榜</string>
+    <string name="bottom_sheet_playlist_title">播放列表</string>
+    <string name="bottom_sheet_clear">全部清空</string>
+    <string name="notification_action_pause">Pause</string>
+    <string name="notification_action_play">Play</string>
+    <string name="notification_action_prev">last</string>
+    <string name="notification_action_next">next</string>
+
+</resources>
